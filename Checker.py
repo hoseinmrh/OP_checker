@@ -46,8 +46,8 @@ def checker(solution):
     print("Profit", profit)
     print("Time", time)
 
-# read file and inital data
-read_file("set_66_1_050")
+# read file and initalise data
+read_file("set_66_1_020")
 
 # put solution here
 solution_array = [1,5,4,8,12,15,60]
