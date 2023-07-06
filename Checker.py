@@ -21,8 +21,19 @@ def read_file(file_name):
 def distance(node1, node2):
     return math.sqrt((node1.x - node2.x)**2 + (node1.y- node2.y)**2)
 
+def unique_checker(solution):
+    for i in range(len(solution)):
+        for j in range(len(solution)):
+            if i != j:
+                if solution[i] == solution[j]:
+                    return False
+    
+    return True
 
 def checker(solution):
+    if(not unique_checker(solution)):
+        print("Solution does not contain unique elements") 
+        return
     t_max = T_MAX[0]
     time = 0
     profit = 0
@@ -47,10 +58,10 @@ def checker(solution):
     print("Time", time)
 
 # read file and initalise data
-read_file("set_66_1_020")
+read_file("set_66_1_050")
 
 # put solution here
-solution_array = [1,5,4,8,12,15,60]
+solution_array = [1,5,4,8,60,15,60]
 checker(solution_array)
             
 
