@@ -31,6 +31,9 @@ def unique_checker(solution):
     return True
 
 def checker(solution):
+    if(solution[0]!= 1):
+        print("Not correct")
+        return
     if(not unique_checker(solution)):
         print("Solution does not contain unique elements") 
         return
@@ -61,7 +64,7 @@ def checker(solution):
 read_file("set_66_1_050")
 
 # put solution here
-solution_array = [1,5,4,8,60,15,60]
+solution_array = [1,3,5,6,7,9]
 checker(solution_array)
             
 
